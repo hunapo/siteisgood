@@ -10,20 +10,20 @@ body {
     line-height: 1.5;
     color: #C47ac0;
     background: #C47ac0;
-    
-
 }
+
 h1, h2 {
     margin-bottom: 15px;
 }
 img {
     max-width:100%;
+    max-height:100%;
 }
 
 
 .container {
     max-width: 1100px;
-    margin: 0 0;
+    margin: 0 auto;
     padding: 0 30px;
 } 
 
@@ -85,7 +85,6 @@ ul {
 
 .header {
     background-color: #E39Ec1;
-    color: ;
     min-height: -12px;
 
 }
@@ -100,6 +99,7 @@ ul {
 .header img {
     max-width: 400px;
 }
+
 .header .container {
     display:flex;
     justify-content: center;
@@ -114,11 +114,33 @@ ul {
     background-color: #E39Ec1;
 }
 
+.box {
+    flex: 1;
+    background: #77567A;
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+}
+
 .boxes {
     color: #C47ac0;
     background-color: #77567A;
 }
 
-.box {
+.box i {
+    margin-right: 10px;
+}
 
+@media(max-width: 768px) {
+    .header .container{
+        flex-direction: column;
+        padding-top: 20px;
+        text-align:center;
+    }
+}
+
+.boxes .container {
+    text-align: center;
 }
